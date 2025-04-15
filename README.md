@@ -31,7 +31,7 @@ The following commands will clone the **CACLENS** project and download the neces
 ```bash
 git clone https://github.com/XilongYi/CACLENS.git
 cd CACLENS
-wget "https://drive.google.com/file/d/1EyXFaOz70MkaDz0H2ZPW7vOMvUTXn7mM/view?usp=sharing"
+gdown "https://drive.google.com/uc?export=download&id=1EyXFaOz70MkaDz0H2ZPW7vOMvUTXn7mM"
 tar -zxvf data.tar.gz
 ```
 # Training
