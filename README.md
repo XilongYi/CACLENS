@@ -1,6 +1,7 @@
 ﻿# Title
 
-This repository contains the cross-attention and contrastive learning-based enzyme screening (**CACLENS**) system as described in the paper ****.
+This repository contains the cross-attention and contrastive learning-based enzyme screening (**CACLENS**) system as described in the paper CACLENS: a Multitask Deep Learning System for Enzyme Discovery
+.
 
 # Requirements
 -   OS support: Linux
