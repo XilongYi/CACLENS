@@ -1,7 +1,6 @@
 ﻿# Title
 
-This repository contains the cross-attention and contrastive learning-based enzyme screening (**CACLENS**) system as described in the paper CACLENS: a Multitask Deep Learning System for Enzyme Discovery
-.
+This repository contains the cross-attention and contrastive learning-based enzyme screening (**CACLENS**) system as described in the paper CACLENS: a Multitask Deep Learning System for Enzyme Discovery.
 
 # Requirements
 -   OS support: Linux
@@ -30,10 +29,10 @@ The code has been tested in the following environment:
 The following commands will clone the **CACLENS** project and download the necessary data for further experiments or inference.
 
 ```bash
-git clone https://.git
-cd 
-wget https://drive.google.com/file/d/1e7IOSnQfHxII4KpOUitxlyrbBy-09DPm/view?usp=sharing
-tar -zxvf checkpoints.tar.gz
+git clone https://github.com/XilongYi/CACLENS.git
+cd CACLENS
+wget "https://drive.google.com/file/d/1EyXFaOz70MkaDz0H2ZPW7vOMvUTXn7mM/view?usp=sharing"
+tar -zxvf data.tar.gz
 ```
 # Training
 
@@ -107,16 +106,16 @@ For example, if you input `--seq example.csv`, the file `example.csv` must follo
 The `--model` parameter specifies the model used for the final reaction feasibility prediction (Reaction Prediction Tower). We applied four different encoding combinations based on protein sequences and small molecule SMILES and trained four corresponding models. The AUC values for these models are as follows:
 | Model | Encoding Combination       | AUC  |
 |--------|----------------------------|------|
-| EU     | ESM2 + UniMol              |      |
-| EF     | ESM2 + MolFormer           |      |
-| TU     | ProtT5 + UniMol                 |      |
-| TF     | ProtT5 + MolFormer              |      |
+| EU     | ESM2 + UniMol              |   0.972   |
+| EF     | ESM2 + MolFormer           |    0.978  |
+| TU     | ProtT5 + UniMol                 |  0.982    |
+| TF     | ProtT5 + MolFormer              |   0.991   |
 
 After a few minutes of calculation, you will find the result in the **result** folder.
 
 
 # Web Server
-  For researchers who lack the hardware to deploy **CACLENS**, we provide an easy-to-use web server:
+  For researchers who lack the hardware to deploy **CACLENS**, we provide an easy-to-use web server: https://ai.caclens.com/
   
 # License
 This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**.  
@@ -129,4 +128,3 @@ If you have any questions or suggestions, please contact **[yixilong2023@sinh.ac
 You can also send us your data, and we will process the computation and return the results to you.
   
 
-Please see the file LICENSE for details about the "MIT" license which covers this software and its associated data and documents.
